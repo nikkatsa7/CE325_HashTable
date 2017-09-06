@@ -1,0 +1,68 @@
+Enter input filename: 
+0 -> she
+1 -> a
+3 -> to
+7 -> carefully
+9 -> campus
+11 -> was
+13 -> arrived
+14 -> assigned
+15 -> group
+16 -> learning
+18 -> when
+25 -> study
+29 -> on
+# capacity: 32
+# size: 13
+Enter word to search for (or "quit" to exit): Word: "campus" removed :)
+Enter word to search for (or "quit" to exit): Word: "boy" not found :(
+Enter word to search for (or "quit" to exit): Word: "she" removed :)
+Enter word to search for (or "quit" to exit): Word: "was" removed :)
+Enter word to search for (or "quit" to exit): 
+0 -> ##tomb##
+1 -> a
+3 -> to
+7 -> carefully
+9 -> ##tomb##
+11 -> ##tomb##
+13 -> arrived
+14 -> assigned
+15 -> group
+16 -> learning
+18 -> when
+25 -> study
+29 -> on
+# capacity: 32
+# size: 10
+#######################
+0 -> ##tomb##
+1 -> a
+3 -> to
+7 -> carefully
+9 -> ##tomb##
+11 -> ##tomb##
+13 -> arrived
+14 -> assigned
+15 -> group
+16 -> learning
+18 -> when
+25 -> study
+29 -> on
+# capacity: 32
+# size: 10
+#######################
+0 -> ##tomb##
+1 -> a
+3 -> to
+7 -> carefully
+9 -> ##tomb##
+11 -> ##tomb##
+13 -> arrived
+14 -> assigned
+15 -> group
+16 -> learning
+18 -> when
+25 -> study
+29 -> on
+# capacity: 32
+# size: 10

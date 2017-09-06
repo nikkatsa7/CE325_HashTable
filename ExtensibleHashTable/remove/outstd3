@@ -1,0 +1,305 @@
+Enter input filename: 
+0 -> brand
+1 -> around
+2 -> teamfocused
+6 -> engineered
+8 -> conference
+9 -> foster
+10 -> country
+14 -> bonds
+16 -> worker
+17 -> might
+18 -> teams
+19 -> increasing
+20 -> colleagues
+21 -> while
+22 -> groups
+23 -> call
+24 -> tight
+25 -> today
+26 -> their
+27 -> reflection
+28 -> accounting
+30 -> have
+32 -> world
+33 -> team
+34 -> line
+36 -> send
+37 -> group
+38 -> start
+41 -> then
+42 -> different
+43 -> also
+44 -> when
+45 -> that
+46 -> rite
+47 -> and
+48 -> can
+49 -> study
+50 -> engineers
+51 -> curriculums
+52 -> marketing
+54 -> with
+55 -> jump
+56 -> emphasize
+57 -> carefully
+58 -> committee
+60 -> she
+61 -> the
+63 -> practice
+66 -> assigned
+67 -> for
+68 -> navigate
+69 -> employees
+70 -> new
+71 -> was
+72 -> learning
+74 -> who
+75 -> planning
+76 -> dynamics
+77 -> way
+78 -> collaborating
+79 -> an
+80 -> juggling
+81 -> meetings
+83 -> of
+84 -> at
+85 -> in
+89 -> by
+90 -> passage
+91 -> on
+92 -> adroitly
+95 -> programs
+96 -> entirely
+97 -> to
+98 -> a
+99 -> arrived
+100 -> become
+101 -> demand
+102 -> prepare
+103 -> business
+104 -> revised
+110 -> students
+111 -> complex
+112 -> morning
+113 -> schools
+115 -> emails
+116 -> partyplanning
+119 -> working
+120 -> product
+128 -> school
+129 -> campus
+# capacity: 130
+# size: 90
+Enter word to search for (or "quit" to exit): Word: "arrived" removed :)
+Enter word to search for (or "quit" to exit): Word: "on" removed :)
+Enter word to search for (or "quit" to exit): Word: "campus" removed :)
+Enter word to search for (or "quit" to exit): Word: "she" removed :)
+Enter word to search for (or "quit" to exit): Word: "was" removed :)
+Enter word to search for (or "quit" to exit): Word: "assigned" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "study" removed :)
+Enter word to search for (or "quit" to exit): Word: "group" removed :)
+Enter word to search for (or "quit" to exit): Word: "carefully" removed :)
+Enter word to search for (or "quit" to exit): Word: "engineered" removed :)
+Enter word to search for (or "quit" to exit): Word: "by" removed :)
+Enter word to search for (or "quit" to exit): Word: "the" removed :)
+Enter word to search for (or "quit" to exit): Word: "school" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "foster" removed :)
+Enter word to search for (or "quit" to exit): Word: "tight" removed :)
+Enter word to search for (or "quit" to exit): Word: "bonds" removed :)
+Enter word to search for (or "quit" to exit): Word: "study" not found :(
+Enter word to search for (or "quit" to exit): Word: "groups" removed :)
+Enter word to search for (or "quit" to exit): Word: "have" removed :)
+Enter word to search for (or "quit" to exit): Word: "become" not found :(
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "rite" removed :)
+Enter word to search for (or "quit" to exit): Word: "of" removed :)
+Enter word to search for (or "quit" to exit): Word: "passage" removed :)
+Enter word to search for (or "quit" to exit): Word: "at" not found :(
+Enter word to search for (or "quit" to exit): Word: "programs" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "way" removed :)
+Enter word to search for (or "quit" to exit): Word: "for" removed :)
+Enter word to search for (or "quit" to exit): Word: "students" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "practice" removed :)
+Enter word to search for (or "quit" to exit): Word: "working" removed :)
+Enter word to search for (or "quit" to exit): Word: "in" removed :)
+Enter word to search for (or "quit" to exit): Word: "teams" removed :)
+Enter word to search for (or "quit" to exit): Word: "and" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "reflection" removed :)
+Enter word to search for (or "quit" to exit): Word: "of" not found :(
+Enter word to search for (or "quit" to exit): Word: "the" not found :(
+Enter word to search for (or "quit" to exit): Word: "increasing" removed :)
+Enter word to search for (or "quit" to exit): Word: "demand" not found :(
+Enter word to search for (or "quit" to exit): Word: "for" not found :(
+Enter word to search for (or "quit" to exit): Word: "employees" removed :)
+Enter word to search for (or "quit" to exit): Word: "who" removed :)
+Enter word to search for (or "quit" to exit): Word: "can" not found :(
+Enter word to search for (or "quit" to exit): Word: "adroitly" removed :)
+Enter word to search for (or "quit" to exit): Word: "navigate" not found :(
+Enter word to search for (or "quit" to exit): Word: "group" not found :(
+Enter word to search for (or "quit" to exit): Word: "dynamics" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "worker" removed :)
+Enter word to search for (or "quit" to exit): Word: "today" removed :)
+Enter word to search for (or "quit" to exit): Word: "might" removed :)
+Enter word to search for (or "quit" to exit): Word: "start" removed :)
+Enter word to search for (or "quit" to exit): Word: "the" not found :(
+Enter word to search for (or "quit" to exit): Word: "morning" removed :)
+Enter word to search for (or "quit" to exit): Word: "by" not found :(
+Enter word to search for (or "quit" to exit): Word: "collaborating" not found :(
+Enter word to search for (or "quit" to exit): Word: "with" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "team" removed :)
+Enter word to search for (or "quit" to exit): Word: "of" not found :(
+Enter word to search for (or "quit" to exit): Word: "engineers" removed :)
+Enter word to search for (or "quit" to exit): Word: "then" removed :)
+Enter word to search for (or "quit" to exit): Word: "send" removed :)
+Enter word to search for (or "quit" to exit): Word: "emails" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "colleagues" removed :)
+Enter word to search for (or "quit" to exit): Word: "marketing" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "new" removed :)
+Enter word to search for (or "quit" to exit): Word: "brand" not found :(
+Enter word to search for (or "quit" to exit): Word: "then" not found :(
+Enter word to search for (or "quit" to exit): Word: "jump" not found :(
+Enter word to search for (or "quit" to exit): Word: "on" not found :(
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "conference" removed :)
+Enter word to search for (or "quit" to exit): Word: "call" not found :(
+Enter word to search for (or "quit" to exit): Word: "planning" removed :)
+Enter word to search for (or "quit" to exit): Word: "an" not found :(
+Enter word to search for (or "quit" to exit): Word: "entirely" removed :)
+Enter word to search for (or "quit" to exit): Word: "different" not found :(
+Enter word to search for (or "quit" to exit): Word: "product" not found :(
+Enter word to search for (or "quit" to exit): Word: "line" removed :)
+Enter word to search for (or "quit" to exit): Word: "while" not found :(
+Enter word to search for (or "quit" to exit): Word: "also" not found :(
+Enter word to search for (or "quit" to exit): Word: "juggling" not found :(
+Enter word to search for (or "quit" to exit): Word: "team" not found :(
+Enter word to search for (or "quit" to exit): Word: "meetings" removed :)
+Enter word to search for (or "quit" to exit): Word: "with" not found :(
+Enter word to search for (or "quit" to exit): Word: "accounting" not found :(
+Enter word to search for (or "quit" to exit): Word: "and" not found :(
+Enter word to search for (or "quit" to exit): Word: "the" not found :(
+Enter word to search for (or "quit" to exit): Word: "partyplanning" not found :(
+Enter word to search for (or "quit" to exit): Word: "committee" not found :(
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "prepare" removed :)
+Enter word to search for (or "quit" to exit): Word: "students" not found :(
+Enter word to search for (or "quit" to exit): Word: "for" not found :(
+Enter word to search for (or "quit" to exit): Word: "that" removed :)
+Enter word to search for (or "quit" to exit): Word: "complex" not found :(
+Enter word to search for (or "quit" to exit): Word: "world" removed :)
+Enter word to search for (or "quit" to exit): Word: "business" not found :(
+Enter word to search for (or "quit" to exit): Word: "schools" removed :)
+Enter word to search for (or "quit" to exit): Word: "around" not found :(
+Enter word to search for (or "quit" to exit): Word: "the" not found :(
+Enter word to search for (or "quit" to exit): Word: "country" not found :(
+Enter word to search for (or "quit" to exit): Word: "have" not found :(
+Enter word to search for (or "quit" to exit): Word: "revised" removed :)
+Enter word to search for (or "quit" to exit): Word: "their" not found :(
+Enter word to search for (or "quit" to exit): Word: "curriculums" not found :(
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "emphasize" removed :)
+Enter word to search for (or "quit" to exit): Word: "teamfocused" not found :(
+Enter word to search for (or "quit" to exit): Word: "learning" not found :(
+Enter word to search for (or "quit" to exit): 
+0 -> brand
+1 -> around
+2 -> teamfocused
+6 -> ##tomb##
+8 -> ##tomb##
+9 -> ##tomb##
+10 -> country
+14 -> ##tomb##
+16 -> ##tomb##
+17 -> ##tomb##
+18 -> ##tomb##
+19 -> ##tomb##
+20 -> ##tomb##
+21 -> while
+22 -> ##tomb##
+23 -> call
+24 -> ##tomb##
+25 -> ##tomb##
+26 -> their
+27 -> ##tomb##
+28 -> accounting
+30 -> ##tomb##
+32 -> ##tomb##
+33 -> ##tomb##
+34 -> ##tomb##
+36 -> ##tomb##
+37 -> ##tomb##
+38 -> ##tomb##
+41 -> ##tomb##
+42 -> different
+43 -> also
+44 -> when
+45 -> ##tomb##
+46 -> ##tomb##
+47 -> ##tomb##
+48 -> can
+49 -> ##tomb##
+50 -> ##tomb##
+51 -> curriculums
+52 -> ##tomb##
+54 -> ##tomb##
+55 -> jump
+56 -> ##tomb##
+57 -> ##tomb##
+58 -> committee
+60 -> ##tomb##
+61 -> ##tomb##
+63 -> ##tomb##
+66 -> ##tomb##
+67 -> ##tomb##
+68 -> navigate
+69 -> ##tomb##
+70 -> ##tomb##
+71 -> ##tomb##
+72 -> learning
+74 -> ##tomb##
+75 -> ##tomb##
+76 -> ##tomb##
+77 -> ##tomb##
+78 -> collaborating
+79 -> an
+80 -> juggling
+81 -> ##tomb##
+83 -> ##tomb##
+84 -> at
+85 -> ##tomb##
+89 -> ##tomb##
+90 -> ##tomb##
+91 -> ##tomb##
+92 -> ##tomb##
+95 -> ##tomb##
+96 -> ##tomb##
+97 -> ##tomb##
+98 -> a
+99 -> ##tomb##
+100 -> become
+101 -> demand
+102 -> ##tomb##
+103 -> business
+104 -> ##tomb##
+110 -> ##tomb##
+111 -> complex
+112 -> ##tomb##
+113 -> ##tomb##
+115 -> ##tomb##
+116 -> partyplanning
+119 -> ##tomb##
+120 -> product
+128 -> ##tomb##
+129 -> ##tomb##
+# capacity: 130
+# size: 28

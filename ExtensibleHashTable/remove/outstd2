@@ -1,0 +1,124 @@
+Enter input filename: 
+0 -> have
+3 -> practice
+4 -> tight
+6 -> can
+7 -> carefully
+8 -> and
+9 -> navigate
+10 -> worker
+12 -> groups
+16 -> rite
+17 -> group
+18 -> demand
+19 -> become
+20 -> passage
+21 -> the
+22 -> employees
+23 -> dynamics
+26 -> engineered
+27 -> for
+29 -> study
+32 -> adroitly
+33 -> of
+34 -> at
+35 -> programs
+36 -> in
+37 -> a
+38 -> way
+39 -> by
+40 -> increasing
+41 -> who
+47 -> to
+48 -> school
+49 -> working
+50 -> students
+51 -> reflection
+54 -> bonds
+58 -> teams
+59 -> foster
+# capacity: 60
+# size: 38
+Enter word to search for (or "quit" to exit): Word: "engineered" removed :)
+Enter word to search for (or "quit" to exit): Word: "by" removed :)
+Enter word to search for (or "quit" to exit): Word: "the" removed :)
+Enter word to search for (or "quit" to exit): Word: "school" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" removed :)
+Enter word to search for (or "quit" to exit): Word: "foster" removed :)
+Enter word to search for (or "quit" to exit): Word: "tight" removed :)
+Enter word to search for (or "quit" to exit): Word: "bonds" removed :)
+Enter word to search for (or "quit" to exit): Word: "study" removed :)
+Enter word to search for (or "quit" to exit): Word: "groups" removed :)
+Enter word to search for (or "quit" to exit): Word: "have" removed :)
+Enter word to search for (or "quit" to exit): Word: "become" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" removed :)
+Enter word to search for (or "quit" to exit): Word: "rite" removed :)
+Enter word to search for (or "quit" to exit): Word: "of" removed :)
+Enter word to search for (or "quit" to exit): Word: "passage" removed :)
+Enter word to search for (or "quit" to exit): Word: "at" not found :(
+Enter word to search for (or "quit" to exit): Word: "programs" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "way" not found :(
+Enter word to search for (or "quit" to exit): Word: "for" removed :)
+Enter word to search for (or "quit" to exit): Word: "students" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "practice" removed :)
+Enter word to search for (or "quit" to exit): Word: "working" removed :)
+Enter word to search for (or "quit" to exit): Word: "in" not found :(
+Enter word to search for (or "quit" to exit): Word: "teams" removed :)
+Enter word to search for (or "quit" to exit): Word: "and" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "reflection" not found :(
+Enter word to search for (or "quit" to exit): Word: "of" not found :(
+Enter word to search for (or "quit" to exit): Word: "the" not found :(
+Enter word to search for (or "quit" to exit): Word: "increasing" not found :(
+Enter word to search for (or "quit" to exit): Word: "demand" removed :)
+Enter word to search for (or "quit" to exit): Word: "for" not found :(
+Enter word to search for (or "quit" to exit): Word: "employees" not found :(
+Enter word to search for (or "quit" to exit): Word: "who" not found :(
+Enter word to search for (or "quit" to exit): Word: "can" removed :)
+Enter word to search for (or "quit" to exit): Word: "adroitly" removed :)
+Enter word to search for (or "quit" to exit): Word: "navigate" not found :(
+Enter word to search for (or "quit" to exit): Word: "group" removed :)
+Enter word to search for (or "quit" to exit): Word: "dynamics" not found :(
+Enter word to search for (or "quit" to exit): 
+0 -> ##tomb##
+3 -> ##tomb##
+4 -> ##tomb##
+6 -> ##tomb##
+7 -> carefully
+8 -> ##tomb##
+9 -> navigate
+10 -> worker
+12 -> ##tomb##
+16 -> ##tomb##
+17 -> ##tomb##
+18 -> ##tomb##
+19 -> ##tomb##
+20 -> ##tomb##
+21 -> ##tomb##
+22 -> employees
+23 -> dynamics
+26 -> ##tomb##
+27 -> ##tomb##
+29 -> ##tomb##
+32 -> ##tomb##
+33 -> ##tomb##
+34 -> at
+35 -> ##tomb##
+36 -> in
+37 -> ##tomb##
+38 -> way
+39 -> ##tomb##
+40 -> increasing
+41 -> who
+47 -> ##tomb##
+48 -> ##tomb##
+49 -> ##tomb##
+50 -> ##tomb##
+51 -> reflection
+54 -> ##tomb##
+58 -> ##tomb##
+59 -> ##tomb##
+# capacity: 60
+# size: 11

@@ -1,0 +1,113 @@
+Enter input filename: 
+1 -> working
+8 -> school
+19 -> foster
+22 -> engineered
+23 -> bonds
+26 -> teams
+27 -> worker
+32 -> tight
+33 -> groups
+35 -> increasing
+36 -> have
+43 -> reflection
+45 -> group
+50 -> can
+51 -> and
+52 -> rite
+57 -> study
+65 -> the
+71 -> carefully
+72 -> for
+75 -> practice
+78 -> who
+79 -> navigate
+81 -> way
+83 -> employees
+85 -> of
+86 -> at
+87 -> in
+88 -> dynamics
+91 -> by
+97 -> a
+99 -> to
+100 -> passage
+104 -> adroitly
+105 -> demand
+107 -> become
+108 -> programs
+122 -> students
+# capacity: 128
+# size: 38
+Enter word to search for (or "quit" to exit): Word: "engineered" removed :)
+Enter word to search for (or "quit" to exit): Word: "by" removed :)
+Enter word to search for (or "quit" to exit): Word: "the" removed :)
+Enter word to search for (or "quit" to exit): Word: "school" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" removed :)
+Enter word to search for (or "quit" to exit): Word: "foster" removed :)
+Enter word to search for (or "quit" to exit): Word: "tight" removed :)
+Enter word to search for (or "quit" to exit): Word: "bonds" not found :(
+Enter word to search for (or "quit" to exit): Word: "study" removed :)
+Enter word to search for (or "quit" to exit): Word: "groups" not found :(
+Enter word to search for (or "quit" to exit): Word: "have" removed :)
+Enter word to search for (or "quit" to exit): Word: "become" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" removed :)
+Enter word to search for (or "quit" to exit): Word: "rite" removed :)
+Enter word to search for (or "quit" to exit): Word: "of" removed :)
+Enter word to search for (or "quit" to exit): Word: "passage" removed :)
+Enter word to search for (or "quit" to exit): Word: "at" not found :(
+Enter word to search for (or "quit" to exit): Word: "programs" not found :(
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "way" removed :)
+Enter word to search for (or "quit" to exit): Word: "for" removed :)
+Enter word to search for (or "quit" to exit): Word: "students" removed :)
+Enter word to search for (or "quit" to exit): Word: "to" not found :(
+Enter word to search for (or "quit" to exit): Word: "practice" removed :)
+Enter word to search for (or "quit" to exit): Word: "working" removed :)
+Enter word to search for (or "quit" to exit): Word: "in" removed :)
+Enter word to search for (or "quit" to exit): Word: "teams" removed :)
+Enter word to search for (or "quit" to exit): Word: "and" removed :)
+Enter word to search for (or "quit" to exit): Word: "a" not found :(
+Enter word to search for (or "quit" to exit): Word: "reflection" removed :)
+Enter word to search for (or "quit" to exit): Word: "of" not found :(
+Enter word to search for (or "quit" to exit): Word: "the" not found :(
+Enter word to search for (or "quit" to exit): Word: "increasing" removed :)
+Enter word to search for (or "quit" to exit): Word: "demand" removed :)
+Enter word to search for (or "quit" to exit): Word: "for" not found :(
+Enter word to search for (or "quit" to exit): Word: "employees" removed :)
+Enter word to search for (or "quit" to exit): Word: "who" removed :)
+Enter word to search for (or "quit" to exit): Word: "can" removed :)
+Enter word to search for (or "quit" to exit): Word: "adroitly" removed :)
+Enter word to search for (or "quit" to exit): Word: "navigate" removed :)
+Enter word to search for (or "quit" to exit): Word: "group" removed :)
+Enter word to search for (or "quit" to exit): Word: "dynamics" removed :)
+Enter word to search for (or "quit" to exit): 
+0 -> groups
+7 -> carefully
+11 -> programs
+21 -> at
+22 -> bonds
+24 -> ##tomb##
+26 -> worker
+# capacity: 32
+# size: 6
+#######################
+0 -> groups
+7 -> carefully
+11 -> programs
+21 -> at
+22 -> bonds
+24 -> ##tomb##
+26 -> worker
+# capacity: 32
+# size: 6
+#######################
+0 -> groups
+7 -> carefully
+11 -> programs
+21 -> at
+22 -> bonds
+24 -> ##tomb##
+26 -> worker
+# capacity: 32
+# size: 6
