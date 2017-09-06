@@ -243,10 +243,10 @@ bool HashTable::operator >> (string str){
 }
 
 HashTable HashTable::operator+(const HashTable &ht){
-  HashTable newHt;
-  newHt.capacity = this->capacity + ht.capacity;
-  newHt.size = 0;
-  newHt.table = new (nothrow) string[newHt.capacity];
+  HashTable newHt(this->capacity + ht.capacity);
+  // newHt.capacity = this->capacity + ht.capacity;
+  // newHt.size = 0;
+  // newHt.table = new (nothrow) string[newHt.capacity];
   
   if(newHt.table == nullptr){
     cerr << "memory allocation problem" << endl;
