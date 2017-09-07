@@ -16,7 +16,9 @@ protected:
   unsigned int capacity;
   string *table;
   static int getHashCode(const char *str);
-  
+  static bool checkDeadOrEmpty(const string &s);
+  static bool checkDeadOrEmpty(const char * s);
+
 public:
   class Iterator;
   
@@ -91,6 +93,20 @@ int HashTable::getHashCode(const char *str){
   return(hash);
 }
 
+bool HashTable::checkDeadOrEmpty(const string &s){
+  if(s == "" || s == "##tomb##")
+    return true;
+  else
+    return false;
+}
+
+bool HashTable::checkDeadOrEmpty(const char *s){
+  if(s == "" || s == "##tomb##")
+    return true;
+  else
+    return false;
+}
+
 int HashTable::getSize(){
   return(size);
 }
@@ -151,7 +167,7 @@ bool HashTable::contains(const char *s){
 
 bool HashTable::add(const string & s){
   int hash = getHashCode(s.c_str()) % capacity;
-  if(contains(s)){
+  if(contains(s) || checkDeadOrEmpty(s)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -167,7 +183,7 @@ bool HashTable::add(const string & s){
 
 bool HashTable::add(const char * s){
   int hash = getHashCode(s) % capacity;
-  if(contains(s)){
+  if(contains(s) || checkDeadOrEmpty(s)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -213,7 +229,7 @@ bool HashTable::remove(const char * s){
 
 bool HashTable::operator << (string str){
   int hash = getHashCode(str.c_str()) % capacity;
-  if(contains(str)){
+  if(contains(str) || checkDeadOrEmpty(str)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -228,7 +244,7 @@ bool HashTable::operator << (string str){
 }
 
 bool HashTable::operator >> (string str){
-  if(!contains(str)){
+  if(!contains(str) || checkDeadOrEmpty(str)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
