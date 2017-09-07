@@ -167,7 +167,7 @@ bool HashTable::contains(const char *s){
 
 bool HashTable::add(const string & s){
   int hash = getHashCode(s.c_str()) % capacity;
-  if(contains(s) || checkDeadOrEmpty(s)){
+  if(contains(s) && checkDeadOrEmpty(s)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -183,7 +183,7 @@ bool HashTable::add(const string & s){
 
 bool HashTable::add(const char * s){
   int hash = getHashCode(s) % capacity;
-  if(contains(s) || checkDeadOrEmpty(s)){
+  if(contains(s) && checkDeadOrEmpty(s)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -228,34 +228,11 @@ bool HashTable::remove(const char * s){
 }
 
 bool HashTable::operator << (string str){
-  int hash = getHashCode(str.c_str()) % capacity;
-  if(contains(str) || checkDeadOrEmpty(str)){
-    return false;
-  } else{
-    for (int i=0; i<capacity;i++){
-      if(isAvailable((hash+i)%capacity)){
-        table[(hash+i)%capacity] = str;
-        size++;
-        return true;
-      }
-    }
-    return false;
-  }
+  return add(str);
 }
 
 bool HashTable::operator >> (string str){
-  if(!contains(str) || checkDeadOrEmpty(str)){
-    return false;
-  } else{
-    for (int i=0; i<capacity;i++){
-      if(table[i] == str){
-        table[i] = "##tomb##";
-        size--;
-        return true;
-      }
-    }
-    return false;
-  }
+  return remove(str);
 }
 
 HashTable HashTable::operator+(const HashTable &ht){
