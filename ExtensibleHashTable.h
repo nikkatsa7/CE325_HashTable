@@ -64,13 +64,17 @@ void ExtensibleHashTable::rehash(){
   for(int i=0; i<this->capacity; i++){
     rht.HashTable::add(this->table[i]);
   }
-  
+
   this->capacity = rht.capacity;
 
   if(this->table!=nullptr) {
     delete[] this->table;
   }
   this->table = new string [this->capacity];
+  if(this->table == nullptr){
+    cerr << "memory allocation problem" << endl;
+    exit(-1);
+  }
   for(int i=0; i<this->capacity;i++){
     this->table[i] = rht.table[i];
   }
@@ -128,12 +132,15 @@ ExtensibleHashTable &ExtensibleHashTable::operator+=(const ExtensibleHashTable &
   return *this;
 }
 
-
 ExtensibleHashTable &ExtensibleHashTable::operator=(const ExtensibleHashTable &t){
   this->capacity = t.capacity;
   this->size = t.size;
   delete []this->table;
   this->table = new string[this->capacity];
+  if(this->table == nullptr){
+    cerr << "memory allocation problem" << endl;
+    exit(-1);
+  }
   for(int i=0;i<t.capacity;i++)
     this->table[i] = t.table[i];
 

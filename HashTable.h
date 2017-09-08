@@ -61,14 +61,22 @@ public:
 
 HashTable::HashTable(int size){
   this->size = 0;
-  capacity = size;
-  table = new string[capacity];
+  this->capacity = size;
+  this->table = new string[capacity];
+  if(this->table == nullptr){
+    cerr << "memory allocation problem" << endl;
+    exit(-1);
+  }
 }
 
 HashTable::HashTable(const HashTable &ht){
   this->size = ht.size;
   this->capacity = ht.capacity;
   this->table = new string[ht.capacity];
+  if(this->table == nullptr){
+    cerr << "memory allocation problem" << endl;
+    exit(-1);
+  }
 }
 
 void HashTable::print() {
@@ -86,10 +94,6 @@ int HashTable::getHashCode(const char *str){
     char c = str[i];
     hash += int(c);
   }
-  #ifdef DEBUG
-    cout << "Computed hash " << hash << " for word " << str << endl;
-  #endif
-
   return(hash);
 }
 
@@ -143,9 +147,6 @@ bool HashTable::isAvailable(int pos){
 
 bool HashTable::contains(const string &s){
 	for(int i=0;i<capacity;i++){
-    #ifdef DEBUG
-    cout << "checking " << s << " with " << table[i] << endl;
-    #endif
 		if(s == table[i]){
 			return(true);
 		}
@@ -155,9 +156,6 @@ bool HashTable::contains(const string &s){
 
 bool HashTable::contains(const char *s){
   for(int i=0;i<capacity;i++){
-    #ifdef DEBUG
-    cout << "checking " << s << " with " << table[i] << endl;
-    #endif
 		if(s == table[i]){
       return(true);
 		}
@@ -237,14 +235,6 @@ bool HashTable::operator >> (string str){
 
 HashTable HashTable::operator+(const HashTable &ht){
   HashTable newHt(this->capacity + ht.capacity);
-  // newHt.capacity = this->capacity + ht.capacity;
-  // newHt.size = 0;
-  // newHt.table = new (nothrow) string[newHt.capacity];
-
-  if(newHt.table == nullptr){
-    cerr << "memory allocation problem" << endl;
-    exit(-1);
-  }
   for(int i=0;i<capacity;i++){
     newHt.add(table[i]);
   }
