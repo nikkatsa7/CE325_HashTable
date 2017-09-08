@@ -46,7 +46,6 @@ bool ExtensibleHashTable::hitLower(){
 }
 
 void ExtensibleHashTable::rehash(){
-  //tou gamietai i poutana h mana
   ExtensibleHashTable rht;
   int newCapacity;
 
