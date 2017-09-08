@@ -44,12 +44,16 @@ int main() {
     ExtensibleHashTable eht;
     // ExtensibleHashTable ht1(0.8,0.3,10);
     // ExtensibleHashTable ht2;
+		cout << "Here" << endl;
     eht.add("a");
     eht.add("b");
     eht.add("c");
     eht.add("d");
+		eht.add("g");
     eht.add("e");
     eht.add("f");
+		eht << "nikos";
+		eht.add("r");
     eht.print();
 
     // ht1.add("ena");

@@ -17,32 +17,32 @@ private:
   static bool checkDeadOrEmpty(const char * s);
 
 public:
-  ExtensibleHashTable(double upper_bound_ratio=0.5, 
-                      double lower_bound_ratio=0.125, 
-                      int size=8);  
-  ExtensibleHashTable(const ExtensibleHashTable &t); 
+  ExtensibleHashTable(double upper_bound_ratio=0.5,
+                      double lower_bound_ratio=0.125,
+                      int size=8);
+  ExtensibleHashTable(const ExtensibleHashTable &t);
   bool add(const string &str);
-  bool remove(const string &str);  
+  bool remove(const string &str);
   bool operator << (string str);
   bool operator >> (string str);
   ExtensibleHashTable operator+(const ExtensibleHashTable &t) const;
   // ExtensibleHashTable &operator+=(const ExtensibleHashTable &t);
   // ExtensibleHashTable &operator=(const ExtensibleHashTable &t);
-  
+
 };
 
 ExtensibleHashTable::ExtensibleHashTable(double upper_bound_ratio,double lower_bound_ratio,int size):
-  HashTable(size),upper_bound_ratio(upper_bound_ratio),lower_bound_ratio(lower_bound_ratio){} 
+  HashTable(size),upper_bound_ratio(upper_bound_ratio),lower_bound_ratio(lower_bound_ratio){}
 
 ExtensibleHashTable::ExtensibleHashTable(const ExtensibleHashTable &t):
 HashTable(t),upper_bound_ratio(upper_bound_ratio),lower_bound_ratio(lower_bound_ratio){}
 
 bool ExtensibleHashTable::hitUpper(){
-  return(((this->size/this->capacity))>this->upper_bound_ratio);
+  return(((double(this->size)/double(this->capacity)))>this->upper_bound_ratio);
 }
 
 bool ExtensibleHashTable::hitLower(){
-  return(((this->size/this->capacity))<this->lower_bound_ratio);
+  return(((double(this->size)/double(this->capacity)))<this->lower_bound_ratio);
 }
 
 void ExtensibleHashTable::rehash(){
@@ -50,13 +50,15 @@ void ExtensibleHashTable::rehash(){
   ExtensibleHashTable rht;
   int newCapacity;
 
+  // cout << "The ratio is:" << (double(this->size)/double(this->capacity)) <<endl;
+
   if(hitUpper()){
-    cout << "Upper bound hit!" << endl;
+    // cout << "Upper bound hit!" << endl;
 
     newCapacity = this->capacity*2;
-    
+
   }else if(hitLower()){
-    cout << "Lower bound hit!" << endl;
+    // cout << "Lower bound hit!" << endl;
 
     newCapacity = this->capacity/2;
 
@@ -72,16 +74,15 @@ void ExtensibleHashTable::rehash(){
     rht.HashTable::add(this->table[i]);
   }
 
-  rht.print();
-
   this->size = rht.size;
   this->capacity = rht.capacity;
 
   if(this->table!=nullptr) {
     delete[] this->table;
-  }  
+  }
+  this->table = new string [this->capacity];
   for(int i=0; i<this->capacity;i++){
-    this->table[i] = rht.table[i]; 
+    this->table[i] = rht.table[i];
   }
 }
 
@@ -107,7 +108,7 @@ bool ExtensibleHashTable::add(const string &str){
   }else{
     return false;
   }
-} 
+}
 
 bool ExtensibleHashTable::remove(const string &str){
   if(HashTable::remove(str)){
@@ -125,7 +126,7 @@ bool ExtensibleHashTable::operator<<(string str){
 bool ExtensibleHashTable::operator>>(string str){
   return  remove(str);
 }
- 
+
 ExtensibleHashTable ExtensibleHashTable::operator+(const ExtensibleHashTable &t) const{
   ExtensibleHashTable ht(upper_bound_ratio,lower_bound_ratio,capacity+t.capacity);
 
