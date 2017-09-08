@@ -41,31 +41,32 @@ int main() {
 
 #ifdef CHECK_EXTENTED_HASH
 
-    ExtensibleHashTable eht;
-    // ExtensibleHashTable ht1(0.8,0.3,10);
-    // ExtensibleHashTable ht2;
-		cout << "Here" << endl;
-    eht.add("a");
-    eht.add("b");
-    eht.add("c");
-    eht.add("d");
-		eht.add("g");
-    eht.add("e");
-    eht.add("f");
-		eht << "nikos";
-		eht.add("r");
-    eht.print();
+    ExtensibleHashTable eht,eht1,eht2,eht3;
 
-    // ht1.add("ena");
-    // ht1.add("duo");
-    // ht1.add("tria");
-    // ht1.add("tessera");
-    // ht1.add("pente");
-    // ht1.add("eksi");
-    // ht1.print();
+		eht << "a";
+		eht << "b";
+		eht << "c";
+		eht << "d";
+		eht << "e";
+		eht << "f";
+		eht << "h";
+		eht << "j";
+		eht << "k";
+		eht << "l";
 
-    // ht2 = ht+ht1;
-    // ht2.print();
+		eht.print();
+
+		eht >> "c";
+		eht >> "d";
+		eht >> "b";
+		eht >> "k";
+		eht >> "l";
+		eht >> "j";
+		eht >> "c";
+		eht >> "d";
+		eht >> "a";
+		eht.print();
+
 #endif
     return 0;
 }

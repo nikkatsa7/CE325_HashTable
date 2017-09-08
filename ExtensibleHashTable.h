@@ -13,8 +13,6 @@ private:
   void rehash();
   bool hitUpper();
   bool hitLower();
-  static bool checkDeadOrEmpty(const string &s);
-  static bool checkDeadOrEmpty(const char * s);
 
 public:
   ExtensibleHashTable(double upper_bound_ratio=0.5,
@@ -26,8 +24,8 @@ public:
   bool operator << (string str);
   bool operator >> (string str);
   ExtensibleHashTable operator+(const ExtensibleHashTable &t) const;
-  // ExtensibleHashTable &operator+=(const ExtensibleHashTable &t);
-  // ExtensibleHashTable &operator=(const ExtensibleHashTable &t);
+  ExtensibleHashTable &operator+=(const ExtensibleHashTable &t);
+  ExtensibleHashTable &operator=(const ExtensibleHashTable &t);
 
 };
 
@@ -49,16 +47,10 @@ void ExtensibleHashTable::rehash(){
   ExtensibleHashTable rht;
   int newCapacity;
 
-  // cout << "The ratio is:" << (double(this->size)/double(this->capacity)) <<endl;
-
   if(hitUpper()){
-    // cout << "Upper bound hit!" << endl;
-
     newCapacity = this->capacity*2;
 
   }else if(hitLower()){
-    // cout << "Lower bound hit!" << endl;
-
     newCapacity = this->capacity/2;
 
   } else{
@@ -72,8 +64,7 @@ void ExtensibleHashTable::rehash(){
   for(int i=0; i<this->capacity; i++){
     rht.HashTable::add(this->table[i]);
   }
-
-  this->size = rht.size;
+  
   this->capacity = rht.capacity;
 
   if(this->table!=nullptr) {
@@ -85,24 +76,9 @@ void ExtensibleHashTable::rehash(){
   }
 }
 
-
-bool ExtensibleHashTable::checkDeadOrEmpty(const string &s){
-  if(s == "" || s == "##tomb##")
-    return true;
-  else
-    return false;
-}
-
-bool ExtensibleHashTable::checkDeadOrEmpty(const char *s){
-  if(s == "" || s == "##tomb##")
-    return true;
-  else
-    return false;
-}
-
 bool ExtensibleHashTable::add(const string &str){
-  if(HashTable::add(str)){
-    rehash();
+  if(this->HashTable::add(str)){
+    this->rehash();
     return true;
   }else{
     return false;
@@ -110,8 +86,8 @@ bool ExtensibleHashTable::add(const string &str){
 }
 
 bool ExtensibleHashTable::remove(const string &str){
-  if(HashTable::remove(str)){
-    rehash();
+  if(this->HashTable::remove(str)){
+    this->rehash();
     return true;
   }else{
     return false;
@@ -119,28 +95,49 @@ bool ExtensibleHashTable::remove(const string &str){
 }
 
 bool ExtensibleHashTable::operator<<(string str){
-  return add(str);
+  return this->add(str);
 }
 
 bool ExtensibleHashTable::operator>>(string str){
-  return  remove(str);
+  return this->remove(str);
 }
 
 ExtensibleHashTable ExtensibleHashTable::operator+(const ExtensibleHashTable &t) const{
-  ExtensibleHashTable ht(upper_bound_ratio,lower_bound_ratio,capacity+t.capacity);
-
-  cout << "new HashTable capacity " << ht.HashTable::capacity << endl;
+  ExtensibleHashTable ht;
 
   for(int i = 0;i<this->capacity;i++){
-    if(ht.add(this->table[i]))
-      cout << "now adding from the first " << this->table[i] << endl;
+    ht.add(this->table[i]);
   }
-  for(int i = 0;i<t.capacity;i++){
-    if(ht.add(t.table[i]))
-      cout << "now adding from the second " << t.table[i] << endl;
+  ht.print();
 
+  cout << endl;
+
+  for(int i = 0;i<t.capacity;i++){
+    ht.add(t.table[i]);
   }
+
+  ht.print();
+
   return ht;
+}
+
+ExtensibleHashTable &ExtensibleHashTable::operator+=(const ExtensibleHashTable &t){
+  for(int i=0;i<t.capacity;i++){
+    this->add(t.table[i]);
+  }
+  return *this;
+}
+
+
+ExtensibleHashTable &ExtensibleHashTable::operator=(const ExtensibleHashTable &t){
+  this->capacity = t.capacity;
+  this->size = t.size;
+  delete []this->table;
+  this->table = new string[this->capacity];
+  for(int i=0;i<t.capacity;i++)
+    this->table[i] = t.table[i];
+
+  return *this;
 }
 
 #endif

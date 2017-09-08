@@ -10,7 +10,7 @@
 using namespace std;
 
 class HashTable {
- 
+
 protected:
   unsigned int size;
   unsigned int capacity;
@@ -21,7 +21,7 @@ protected:
 
 public:
   class Iterator;
-  
+
   HashTable(int size=8);
   HashTable(const HashTable &ht);
   int getSize();
@@ -36,18 +36,18 @@ public:
   virtual bool remove(const string &s);
   virtual bool remove(const char *s);
   Iterator begin() const;
-  Iterator end() const; 
+  Iterator end() const;
   void print() ;
-  
+
   virtual bool operator << (string str);
   virtual bool operator >> (string str);
   HashTable operator+(const HashTable &ht);
   HashTable &operator+=(const HashTable &t);
   HashTable &operator=(const HashTable &t);
-  
+
   class Iterator {
-    string *p, *end;    
-  public:    
+    string *p, *end;
+  public:
     Iterator operator++();
     Iterator operator--();
     Iterator operator++(int a);
@@ -137,7 +137,7 @@ bool HashTable::isTomb(int pos){
 bool HashTable::isAvailable(int pos){
   if(isEmpty(pos) || isTomb(pos)){
     return (true);
-  } 
+  }
   return(false);
 }
 
@@ -167,7 +167,7 @@ bool HashTable::contains(const char *s){
 
 bool HashTable::add(const string & s){
   int hash = getHashCode(s.c_str()) % capacity;
-  if(contains(s) && checkDeadOrEmpty(s)){
+  if(contains(s) || checkDeadOrEmpty(s)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -183,7 +183,7 @@ bool HashTable::add(const string & s){
 
 bool HashTable::add(const char * s){
   int hash = getHashCode(s) % capacity;
-  if(contains(s) && checkDeadOrEmpty(s)){
+  if(contains(s) || checkDeadOrEmpty(s)){
     return false;
   } else{
     for (int i=0; i<capacity;i++){
@@ -240,7 +240,7 @@ HashTable HashTable::operator+(const HashTable &ht){
   // newHt.capacity = this->capacity + ht.capacity;
   // newHt.size = 0;
   // newHt.table = new (nothrow) string[newHt.capacity];
-  
+
   if(newHt.table == nullptr){
     cerr << "memory allocation problem" << endl;
     exit(-1);
@@ -251,7 +251,7 @@ HashTable HashTable::operator+(const HashTable &ht){
   for(int i=0;i<ht.capacity;i++){
     newHt.add(ht.table[i]);
   }
-  
+
   return newHt;
 }
 
@@ -279,7 +279,7 @@ HashTable &HashTable::operator+=(const HashTable &t){
   }
     cout << "here" << endl;
 
-  for(int i=0;i<t.capacity;i++){    
+  for(int i=0;i<t.capacity;i++){
     add(t.table[i]);
   }
 }
